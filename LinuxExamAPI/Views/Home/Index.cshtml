@@ -1,0 +1,12 @@
+﻿@using LinuxExamAPI.StaticClass
+
+<div class="p-5 rounded-3">
+    @if (AppSettingsKeys.IsWindows)
+    {
+        <img width="100%" src="~/images/welcome.jpg" />
+    }
+    else
+    {
+        <img width="100%" src="/@AppSettingsKeys.ApiURI/images/welcome.jpg" />
+    }
+</div>
